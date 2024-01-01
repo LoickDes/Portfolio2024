@@ -1,0 +1,854 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Montserrat:wght@500&family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Montserrat:wght@500&family=Overpass&family=Unbounded:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    overflow: hidden;
+    animation: overflow 7s forwards;
+
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter Tight', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+    
+}
+
+main{
+    background-color: white;
+}
+
+header{
+   
+    position: fixed;
+    top: 0;
+    height: 13vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+   
+}
+
+header,menu, nav{
+    color: white;
+    mix-blend-mode: difference;
+}
+
+h1{
+    width:50vw;
+    display: flex;
+    justify-content: start;
+    font-family: 'Inter Tight', sans-serif;
+    
+}
+
+h1>a{
+    text-decoration: none;
+    color: white;
+}
+
+#home>h2{
+    font-family: 'Inter', sans-serif;
+    align-self: flex-start;
+    font-size: 9.8rem;
+    font-weight: 800;
+    line-height: 17vh;
+    margin-top:11vh;
+    margin-left: 5vw;
+}
+
+
+#home a img{
+    height: 100px;
+    animation: bounce ease 2s infinite;
+}
+
+#home a{
+    align-self: flex-end;
+    margin-top: -12vh;
+    padding-right: 5vw;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    scroll-snap-align: start;
+    
+
+}
+
+#home aside{
+    margin-top: -15vh;
+    overflow: hidden;
+    height: 430px;
+}
+
+menu ul{
+   
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+
+}
+
+nav ul,li, a{
+
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+
+menu ul li a{
+    position:relative;
+    text-decoration:none;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  menu ul li a::before, .right-project a::before, .top>div a::before, .links>span::before{ 
+    position: absolute;
+    bottom:0;
+    transform-origin:100% 0;
+    content:"";
+    transition:transform 0.7s;
+    background-color: white;
+    transform:scaleX(0);
+    width:100%;
+    height:10%;
+  
+  }
+
+  .right-project a::before, .top>div a::before, .top>div a::before{ 
+  
+    background-color: black;
+    height:5%;
+  
+  }
+  
+ menu ul li a:hover::before, .right-project a:hover::before, .top>div a:hover::before, .links>span:hover::before{
+    transform-origin:0 0;
+    transform:scaleX(1);
+ 
+    
+  }
+ 
+.edge-top{
+width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-top: 15%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.edge-top::before{
+content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 160%;
+  height: 520%;
+  background-color:black;
+  border-radius: 100%
+}
+
+#me{
+    height: auto;
+    width:100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+    margin-top: -10vh;
+
+}
+
+#me .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap:3vw;
+  
+}
+
+#me>h2{
+    font-family: 'Inter', sans-serif;
+    align-self: flex-start;
+    font-size: 7rem;
+    font-weight: 500;
+    margin-left: 5vw;
+    text-transform: uppercase;
+}
+
+#me>h2>span{
+    margin-left: 25vw;
+}
+
+.left p{
+    
+    font-size: 1.5rem;
+    text-align: justify;
+    
+}
+
+.left{
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.keywords{
+    color: white;
+    display: flex;
+    gap: 0.7vw;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.keywords span{
+    border-radius: 20px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    width: 7.06vw;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+
+.container img{
+    height: 500px;
+    border-radius: 50px;
+}
+
+.skills{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.web-container, .design-container{
+    white-space: nowrap;
+    overflow-x: hidden;
+    width: 100vw;
+    position: relative;
+}
+
+
+.skills .design,.web{
+   
+    background-color: black;
+    display: inline-block;
+
+}
+
+#projects{
+    width: 100vw;
+    height: auto;
+    margin-top: -11.3vh;
+   
+}
+
+#projects>h2{
+    font-family: 'Inter ', sans-serif;
+    align-self: flex-start;
+    font-size: 7rem;
+    font-weight: 500;
+    margin-left: 5vw;
+    line-height: 15vh;
+    padding-top: 10vh;
+}
+
+#projects>h2>span{
+    margin-left:20vw;
+}
+
+.web img, .design img{
+    height: 80px;
+    padding-left:8vw;
+}
+
+.web{
+
+    animation: slide 25s linear infinite ;
+}
+
+.design{
+
+    animation: slide 25s linear infinite reverse;
+ 
+}
+
+.web-container::before, .design-container::before{
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    height: 100%;
+    width: 15vw;
+    background:linear-gradient(to left,rgba(255,255,255,0),black);
+    z-index: 1;
+
+}
+
+.web-container::after, .design-container::after{
+    position: absolute;
+    content:"";
+    top:0;
+    right:0;
+    height: 100%;
+    width: 15vw;
+    background:linear-gradient(to right,rgba(255,255,255,0),black);
+}
+
+
+
+.projets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.dashboard,.bugtracker,.meatofkings,.spine{
+    padding-bottom: 13vh;
+
+}
+
+.dashboard{
+    display: flex;
+    width: auto;
+    padding-left: 5vw;
+}
+
+
+.left-project{
+    height: 500px;
+    width: 800px;
+    background-color: #F6A833;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.left-project>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    transition: all ease 1s;
+}
+
+.left-project>img:hover{
+   transform: scale(0.93);
+}
+
+.right-project{
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 2vw;
+}
+
+.right-project>div{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    margin-top: -1vh;
+}
+
+
+
+.right-project a{
+    white-space: nowrap;
+    width: auto;
+    position: relative;
+    font-weight: 300;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.right-project>div span{
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vh;
+    width: 6vw;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.bugtracker .left-project{
+    background-color: #B83B5E;
+}
+
+.bugtracker{
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right:5vw;
+
+}
+
+.bugtracker .right-project>div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bugtracker .right-project{
+    width: auto;
+    margin-right: 2vw;
+}
+
+.meatofkings{
+    width: auto;
+    display: flex;
+    padding-left: 5vw;
+}
+
+.meatofkings .left-project{
+    background-color: #B4846C;
+}
+
+
+.spine .left-project{
+    background-color: #6A2C70;
+}
+
+.spine{
+    width: auto;
+    display: flex;
+    padding-right: 5vw;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.spine .right-project>div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.spine .right-project{
+    width: auto;
+    margin-right: 2vw;
+}
+
+
+.meatofkingsvisuel{
+    width: auto;
+    display: flex;
+    padding-left: 5vw;
+
+}
+
+.meatofkingsvisuel .left-project{
+    background-color: #F9ED69;
+}
+
+
+
+#contact{
+width: 100vw;
+height: 50vh;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10vh;
+flex-direction: column;
+}
+
+.top{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vh;
+}
+
+.top>div>a{
+    position: relative;
+}
+
+.top>div>a span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.2rem;
+    width: 15vw;
+    color: black;
+}
+
+.top>div>a span span{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contact>div>a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    mix-blend-mode: difference;
+    border: 1px solid white;
+    width: 30vw;
+    height: 13vh;
+    font-size: 3rem;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+#contact>div>a::before{
+    mix-blend-mode: difference;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform-origin: center;
+    background-color: white;
+    border-radius:200px;
+    transition: all ease 0.6s;
+
+    
+}
+
+#contact>div>a:hover::before{
+    width: 30vw;
+    height: 30vw;
+}
+
+hr{
+    margin-top: 10vw;
+
+
+}
+
+#contact>a{
+    position: relative;
+    color: black;
+    width: 60vw;
+    height: 13vh;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    cursor: none;
+
+}
+
+#contact>a>span:first-child{
+    transition: all ease 0.5s;
+}
+
+#contact>a img{
+    position: absolute;
+    scale: 0;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    
+
+}
+
+
+
+.links{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    transform: scaleY(0);
+    transform-origin: top;
+    border-bottom-right-radius: 100% 100%;
+    border-bottom-left-radius: 100% 100%;
+    z-index: 2;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 75vh;
+    flex-direction: column;
+}
+
+.links>nav a{
+    position: relative;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 2rem;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 60vw;
+    height: 20vh;
+    border-bottom: 1px solid white;
+    cursor: none;
+  
+}
+
+.links>span{
+    position: relative;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.1rem;
+    align-self: flex-start;
+    margin-left: 5vw;
+    cursor: pointer;
+}
+
+nav a>span:first-child{
+    transition: all ease 0.5s;
+}
+
+.arrow{
+    rotate: -90deg;
+    width: 60px;
+}
+
+nav a>.screenshots{
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    scale: 0;
+    transform:translate(-50%, -50%);
+    transform-origin: top right
+
+
+}
+
+.load{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    gap: 1.5vh;
+    animation: load 0.5s ease 2s forwards;
+    
+}
+
+.load>span:first-child{
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.loader{
+    display: block;
+    position: relative;
+    height: 12px;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .loader:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: black;
+    animation: 2s prog ease forwards;
+  }
+
+  @keyframes load{
+    0%{
+        opacity: 1;
+        scale: 1;
+        overflow:hidden;
+
+    }
+    80%{
+        opacity: 0;
+        scale: 1;
+        overflow:hidden;
+
+
+    }100%{
+        opacity: 0;
+        scale: 0;
+        overflow:scroll;
+
+
+    }
+  }
+  
+  @keyframes overflow{
+    0%{
+        overflow: hidden;
+    }100%{
+        overflow: visible;
+    }
+  }
+
+
+  @keyframes prog {
+    to  {   width: 100%;}
+  }
+  
+
+@keyframes slide{
+
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+
+}
+
+@keyframes in{
+    0%{
+        scale: 0;
+        rotate: 0;
+    }
+    100%{
+        scale: 1;
+        rotate: 15deg;
+    }
+}
+
+@keyframes out{
+    0%{
+        scale: 1;
+        rotate: 15deg;
+    }
+    100%{
+        scale: 0;
+        rotate: 0deg;
+    }
+}
+
+@keyframes linkin{
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@keyframes linkout{
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 0;
+    }
+}
+
+@keyframes linksopen{
+    0%{
+        transform: scaleY(0);
+        border-bottom-right-radius: 100% 100%;
+        border-bottom-left-radius: 100% 100%;
+        
+    }
+
+    100%{
+        transform: scaleY(1);
+        border-radius: 0;
+        
+    }
+}
+
+@keyframes linksclose{
+    0%{
+        transform: scaleY(1);
+        border-radius: 0;
+        
+    }
+
+    100%{   
+        transform: scaleY(0);
+        border-bottom-right-radius: 100% 100%;
+        border-bottom-left-radius: 100% 100%;
+        
+    }
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }50%{
+        transform: translateY(-5vh);
+    }100%{
+        transform: translateY(0);
+    }
+}
+
