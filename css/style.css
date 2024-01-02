@@ -389,13 +389,15 @@ content: "";
     align-items: center;
     gap: 0.5vw;
     margin-top: -1vh;
+    
 }
 
 
 
+
 .right-project a{
-    white-space: nowrap;
     width: auto;
+    white-space: nowrap;
     position: relative;
     font-weight: 300;
     font-size: 3.2rem;
