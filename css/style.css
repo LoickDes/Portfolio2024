@@ -35,6 +35,9 @@ header{
     align-items: center;
     justify-content: space-around;
     z-index: 1;
+    transform: translateY(-100%);
+    opacity: 0;
+    animation: top 0.6s ease forwards 3s;
    
 }
 
@@ -64,6 +67,9 @@ h1>a{
     line-height: 17vh;
     margin-top:11vh;
     margin-left: 5vw;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: right 1s ease forwards 2s;
 }
 
 
@@ -209,6 +215,8 @@ content: "";
     
     font-size: 1.5rem;
     text-align: justify;
+    color: white;
+
     
 }
 
@@ -220,7 +228,7 @@ content: "";
     flex-direction: column;
 }
 
-.keywords{
+#keywords{
     color: white;
     display: flex;
     gap: 0.7vw;
@@ -229,7 +237,7 @@ content: "";
 
 }
 
-.keywords span{
+#keywords span{
     border-radius: 20px;
     border: 1px solid white;
     display: flex;
@@ -341,12 +349,12 @@ content: "";
     width: 100vw;
 }
 
-.dashboard,.bugtracker,.meatofkings,.spine{
+#dashboard,#bugtracker,#meatofkings,#spine{
     padding-bottom: 13vh;
 
 }
 
-.dashboard{
+#dashboard{
     display: flex;
     width: auto;
     padding-left: 5vw;
@@ -417,11 +425,11 @@ content: "";
     font-size: 0.7rem;
 }
 
-.bugtracker .left-project{
+#bugtracker .left-project{
     background-color: #B83B5E;
 }
 
-.bugtracker{
+#bugtracker{
     width: auto;
     display: flex;
     flex-direction: row-reverse;
@@ -431,33 +439,33 @@ content: "";
 
 }
 
-.bugtracker .right-project>div{
+#bugtracker .right-project>div{
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-.bugtracker .right-project{
+#bugtracker .right-project{
     width: auto;
     margin-right: 2vw;
 }
 
-.meatofkings{
+#meatofkings{
     width: auto;
     display: flex;
     padding-left: 5vw;
 }
 
-.meatofkings .left-project{
+#meatofkings .left-project{
     background-color: #B4846C;
 }
 
 
-.spine .left-project{
+#spine .left-project{
     background-color: #6A2C70;
 }
 
-.spine{
+#spine{
     width: auto;
     display: flex;
     padding-right: 5vw;
@@ -466,26 +474,26 @@ content: "";
     justify-content: flex-start;
 }
 
-.spine .right-project>div{
+#spine .right-project>div{
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-.spine .right-project{
+#spine .right-project{
     width: auto;
     margin-right: 2vw;
 }
 
 
-.meatofkingsvisuel{
+#meatofkingsvisuel{
     width: auto;
     display: flex;
     padding-left: 5vw;
 
 }
 
-.meatofkingsvisuel .left-project{
+#meatofkingsvisuel .left-project{
     background-color: #F9ED69;
 }
 
@@ -612,7 +620,7 @@ hr{
     position:fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     top:0;
     left:0;
@@ -634,6 +642,7 @@ nav{
     width: 60vw;
     height: 75vh;
     flex-direction: column;
+    margin-bottom: 6vh;
 }
 
 .links>nav a{
@@ -654,12 +663,13 @@ nav{
 }
 
 .links>span{
+
+    margin: 6vh 0 0 10vw;
     position: relative;
     text-transform: uppercase;
     color: white;
     font-size: 1.1rem;
     align-self: flex-start;
-    margin-left: 5vw;
     cursor: pointer;
 }
 
@@ -748,7 +758,43 @@ nav a>.screenshots{
 
     }
   }
-  
+
+  .hidden-left{
+    opacity: 0;
+    transform: translateX(-80%);
+    transition: all ease 1s;
+    filter: blur(5px);
+  }
+
+    .hidden-right{
+        opacity: 0;
+        transform: translateX(80%);
+        transition: all ease 1s;
+        filter: blur(5px);
+    }
+
+    .hidden-bottom{
+        opacity: 0;
+        transform: translateY(100%);
+        transition: all ease 0.8s;
+        filter: blur(5px);
+    }
+
+  .show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+
+  }
+
+  @media(prefers-reduced-motion:reduce){
+    .hidden-left,.hidden-right,.hidden-bottom{
+        transition: none;
+    }
+  }
+
+
+
   @keyframes overflow{
     0%{
         overflow: hidden;
@@ -854,3 +900,30 @@ nav a>.screenshots{
     }
 }
 
+@keyframes right {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    20%{
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes top{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
