@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Montserrat:wght@500&family=Overpass&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Montserrat:wght@500&family=Overpass&family=Unbounded:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,500;1,6..96,600&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 html{
     scroll-behavior: smooth;
     overflow: hidden;
@@ -34,7 +30,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    z-index: 1;
+    z-index: 2;
     transform: translateY(-100%);
     opacity: 0;
     animation: top 0.6s ease forwards 3s;
@@ -44,6 +40,7 @@ header{
 header,menu, nav{
     color: white;
     mix-blend-mode: difference;
+    
 }
 
 h1{
@@ -60,22 +57,25 @@ h1>a{
 }
 
 #home>h2{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Playfair display', serif;
     align-self: flex-start;
-    font-size: 9.8rem;
-    font-weight: 800;
-    line-height: 17vh;
-    margin-top:11vh;
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 15vh;
+    margin-top:10vh;
     margin-left: 5vw;
     opacity: 0;
     transform: translateX(-100%);
     animation: right 1s ease forwards 2s;
 }
 
+#home>h2>span{
+    font-style: italic;
+}
 
 #home a img{
     height: 100px;
-    animation: bounce ease 2s infinite;
+    animation: bounce ease 3s infinite;
 }
 
 #home a{
@@ -99,7 +99,12 @@ h1>a{
 #home aside{
     margin-top: -15vh;
     overflow: hidden;
-    height: 430px;
+    height: 500px;
+}
+
+#home aside>*{
+    animation: shaking 20s ease infinite;
+    transform: rotate(-5deg);
 }
 
 menu ul{
@@ -124,6 +129,9 @@ menu ul li a{
     color: white;
     cursor: pointer;
     text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Playfair',serif;
+    font-style: italic;
   }
   
   menu ul li a::before, .right-project a::before, .top>div a::before, .links>span::before{ 
@@ -161,6 +169,7 @@ width: 100%;
   padding-top: 15%;
   overflow: hidden;
   background: #fff;
+  
 }
 
 .edge-top::before{
@@ -170,10 +179,10 @@ content: "";
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  width: 160%;
+  width: 200%;
   height: 520%;
   background-color:black;
-  border-radius: 100%
+  border-radius: 100%;
 }
 
 #me{
@@ -185,7 +194,7 @@ content: "";
     justify-content: flex-start;
     flex-direction: column;
     color: white;
-    margin-top: -10vh;
+    margin-top: -15vh;
 
 }
 
@@ -195,19 +204,25 @@ content: "";
     justify-content: center;
     width: 100vw;
     gap:3vw;
+    margin-top: -5vh;
   
 }
 
 #me>h2{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Playfair display', serif;
+    font-style: italic;
     align-self: flex-start;
-    font-size: 7rem;
+    font-size: 8rem;
+    line-height: 15vh;
     font-weight: 500;
     margin-left: 5vw;
     text-transform: uppercase;
+    z-index: 1;
+    margin-top:10vh;
 }
 
 #me>h2>span{
+   
     margin-left: 25vw;
 }
 
@@ -288,9 +303,10 @@ content: "";
 }
 
 #projects>h2{
-    font-family: 'Inter ', sans-serif;
+    font-family: 'Playfair display', serif;
+    font-style: italic;
     align-self: flex-start;
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 500;
     margin-left: 5vw;
     line-height: 15vh;
@@ -299,6 +315,7 @@ content: "";
 
 #projects>h2>span{
     margin-left:20vw;
+  
 }
 
 .web img, .design img{
@@ -362,8 +379,8 @@ content: "";
 
 
 .left-project{
-    height: 500px;
-    width: 800px;
+    height: 550px;
+    width: 825px;
     background-color: #F6A833;
     display: flex;
     align-items: center;
@@ -629,8 +646,7 @@ hr{
     background-color: black;
     transform: scaleY(0);
     transform-origin: top;
-    border-bottom-right-radius: 100% 100%;
-    border-bottom-left-radius: 100% 100%;
+    
     z-index: 2;
 }
 
@@ -646,8 +662,10 @@ nav{
 }
 
 .links>nav a{
+    font-family: 'Playfair display', serif;
+    font-style: italic;
+    font-weight: 500;
     position: relative;
-    font-weight: 200;
     text-transform: uppercase;
     font-size: 2rem;
     white-space: nowrap;
@@ -666,11 +684,14 @@ nav{
 
     margin: 6vh 0 0 10vw;
     position: relative;
+    font-weight: 300;
     text-transform: uppercase;
     color: white;
     font-size: 1.1rem;
     align-self: flex-start;
     cursor: pointer;
+    font-family: 'Playfair',serif;
+    font-style: italic;
 }
 
 nav a>span:first-child{
@@ -690,7 +711,7 @@ nav a>.screenshots{
     pointer-events: none;
     scale: 0;
     transform:translate(-50%, -50%);
-    transform-origin: top right
+    transform-origin: left right;
 
 
 }
@@ -780,6 +801,12 @@ nav a>.screenshots{
         filter: blur(5px);
     }
 
+    .hidden-top{
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all ease 0.8s;
+    }
+
   .show{
     opacity: 1;
     filter: blur(0px);
@@ -863,14 +890,13 @@ nav a>.screenshots{
 @keyframes linksopen{
     0%{
         transform: scaleY(0);
-        border-bottom-right-radius: 100% 100%;
-        border-bottom-left-radius: 100% 100%;
+        
         
     }
 
     100%{
         transform: scaleY(1);
-        border-radius: 0;
+        
         
     }
 }
@@ -878,14 +904,13 @@ nav a>.screenshots{
 @keyframes linksclose{
     0%{
         transform: scaleY(1);
-        border-radius: 0;
+        
         
     }
 
     100%{   
         transform: scaleY(0);
-        border-bottom-right-radius: 100% 100%;
-        border-bottom-left-radius: 100% 100%;
+       
         
     }
 }
@@ -927,3 +952,13 @@ nav a>.screenshots{
         opacity: 1;
     }
 }
+
+
+
+  @keyframes shaking {
+
+    0%{transform: rotate(5deg);}
+    50%{ transform: rotate(-5deg);}
+    100% { transform: rotate(5deg); }
+   
+  }

@@ -18,3 +18,4 @@ hiddenrightElements.forEach((el)=>observer.observe(el));
 
 const hiddenbottomElements = document.querySelectorAll('.hidden-bottom');
 hiddenbottomElements.forEach((el)=>observer.observe(el));
+

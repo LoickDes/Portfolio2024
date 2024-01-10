@@ -31,7 +31,7 @@ $(document).ready(function(){
       $('.links').css({
        animation:'linksopen ease 0.5s forwards'
       })
-      $('.links *').hide().fadeIn();
+      $('.links *').hide().fadeIn(500);
       
     });
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
       $('.links').css({
        animation:'linksclose ease 0.5s forwards' 
       })
-      $('.links *').fadeOut(300);
+      $('.links *').fadeOut(200);
       
     })
 

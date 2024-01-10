@@ -21,6 +21,10 @@ a{
     color: black;
 }
 
+p{
+    font-size: 15px;
+}
+
 h1{
     padding: 1vh 0 0 10.3vw;
     font-size: 2rem;
