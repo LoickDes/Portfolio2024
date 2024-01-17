@@ -16,7 +16,8 @@ $(document).ready(function(){
     $('#contact>a img').css({
       top:y + 'px',
       left:x + 'px',
-      animation:'in ease 0.5s forwards'
+      animation:'in ease 0.5s forwards',
+  
     });
    
   }).mouseleave(function(){
