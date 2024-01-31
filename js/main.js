@@ -36,12 +36,13 @@ $(document).ready(function(){
       
     });
 
-    $('nav a, .links>span').click(function(){
+    $('nav a, .links>span,.links').click(function(){
 
       $('.links').css({
        animation:'linksclose ease 0.5s forwards' 
       })
       $('.links *').fadeOut(200);
+      
       
     })
 

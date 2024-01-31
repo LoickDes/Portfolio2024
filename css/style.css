@@ -64,9 +64,8 @@ h1>a{
     line-height: 15vh;
     margin-top:10vh;
     margin-left: 5vw;
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: right 1s ease forwards 2s;
+   
+
 }
 
 #home>h2>span{
@@ -103,7 +102,7 @@ h1>a{
 }
 
 #home aside>*{
-    animation: shaking 10s linear infinite;
+    animation: shaking 15s linear infinite;
 }
 
 menu ul{
@@ -782,39 +781,78 @@ nav a>.screenshots{
     }
   }
 
+  
 
 
-  .hidden-left{
+    .reveal-left-slider{
+    opacity: 0;
+    transform: translateX(-30%);
+    transition: all ease 1.5s;
+   
+    }
+
+    .reveal-right-slider{
+        opacity: 0;
+        transform: translateX(30%);
+        transition: all ease 1.5s;
+        
+    }
+
+  .reveal-left{
     opacity: 0;
     transform: translateX(-30%);
     transition: all ease 1s;
    
   }
 
-    .hidden-right{
+  .hidden-left{
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: right 1s 2s;
+    animation-iteration-count: 1;
+    transition: all ease 1s;
+   
+  }
+
+  
+
+    .reveal-right{
         opacity: 0;
         transform: translateX(30%);
         transition: all ease 1s;
-        filter: blur(5px);
+       
     }
 
     .hidden-bottom{
         opacity: 0;
-        transform: translateY(100%);
-        transition: all ease 1s;
-        filter: blur(5px);
+        transform: translateY(50%);
+        transition: all ease 0.5s;
+  
     }
 
     .hidden-top{
         opacity: 0;
-        transform: translateY(-30%);
-        transition: all ease 1s;
+        transform: translateY(-50%);
+        transition: all ease 0.5s;
     }
 
-  .show{
+    .reveal-bottom{
+        opacity: 0;
+        transform: translateY(-50%);
+        transition: all ease 0.5s;
+  
+    }
+
+    .reveal-top{
+        opacity: 0;
+        transform: translateY(-50%);
+        transition: all ease 0.5s;
+    }
+
+  .active, .show{
     opacity: 1;
-    filter: blur(0px);
     transform: translate(0);
+   
 
   }
 
@@ -961,9 +999,9 @@ nav a>.screenshots{
 
   @keyframes shaking {
 
-        0% { transform: rotate(0deg); }
+        0% { transform: rotate(0deg);}
         25% { transform: rotate(5deg); }
-        50% { transform: rotate(0eg); }
+        50% { transform: rotate(0deg); }
         75% { transform: rotate(-5deg); }
         100% { transform: rotate(0deg); }
    

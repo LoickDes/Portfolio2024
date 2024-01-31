@@ -11,6 +11,10 @@
 
     <script src="js/main.js"></script>
     <script defer src="./js/scrolltrigger.js"></script>
+
+
+
+</script>
 </head>
 <body>
     <div class="load">
@@ -55,7 +59,7 @@
         </nav>
         </div>
     <section id="home">
-       <h2>PORTFOLIO
+       <h2 class="hidden-left">PORTFOLIO
         <br><span>2024</span></h2>   
            <aside>
             <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.522/build/spline-viewer.js"></script>
@@ -65,11 +69,11 @@
     </section>
     <div class="edge-top"></div>
     <section id="me">
-        <h2 class="hidden-left">A propos<br><span>de moi</span></h2>
+        <h2 class="reveal-left">A propos<br><span>de moi</span></h2>
         <div class="container">
             <div class="left">
-            <p>Je suis Loïck, étudiant en deuxième année de BUT Métiers du Multimédia et de l'Internet. Je suis un créateur passionné, fasciné par le web qui puise son inspiration dans les détails du quotidien.</p>
-            <div id="keywords" class="hidden-bottom">
+            <p class="reveal">Je suis Loïck, étudiant en deuxième année de BUT Métiers du Multimédia et de l'Internet. Je suis un créateur passionné, fasciné par le web qui puise son inspiration dans les détails du quotidien.</p>
+            <div id="keywords" class="reveal-bottom">
                 <span>Creatif</span>
                 <span>UI / UX</span>
                 <span>Webdesign</span>
@@ -79,10 +83,10 @@
                
             </div>
             </div>
-            <img src="./images/IMG_9680_comp.jpg" class="hidden-right" alt="photo"/>
+            <img src="./images/IMG_9680_comp.jpg" class="reveal-right" alt="photo"/>
         </div>
         <div class="skills">
-            <div class="web-container">
+            <div class="reveal-right-slider web-container" >
             <div class="web">
                 <img src="images/Logos/html-1.svg">
                 <img src="images/Logos/css-3.svg">
@@ -105,7 +109,7 @@
             </div>
             
         </div>
-        <div class="design-container">
+        <div class="reveal-left-slider design-container">
             <div class="design">
                 <img src="images/Logos/figma-5.svg">
                 <img src="images/Logos/canva-1.svg">
@@ -113,8 +117,8 @@
                 <img src="images/Logos/adobe-photoshop-2.svg">
                 <img src="images/Logos/premiere-pro-cc.svg">
                 <img src="images/Logos/after-effects-1.svg">
-                <img src="images/Logos/after-effects-1.svg">
-                <img src="images/Logos/after-effects-1.svg">
+                <img src="images/Logos/Adobe_Photoshop_Lightroom_CC_logo.svg">
+                <img src="images/Logos/adobe-audition-cc-icon-2020-.svg">
             </div>
             <div class="design">
                 <img src="images/Logos/figma-5.svg">
@@ -123,17 +127,17 @@
                 <img src="images/Logos/adobe-photoshop-2.svg">
                 <img src="images/Logos/premiere-pro-cc.svg">
                 <img src="images/Logos/after-effects-1.svg">
-                <img src="images/Logos/after-effects-1.svg">
-                <img src="images/Logos/after-effects-1.svg">
+                <img src="images/Logos/Adobe_Photoshop_Lightroom_CC_logo.svg">
+                <img src="images/Logos/adobe-audition-cc-icon-2020-.svg">
             </div>
         </div>
         </div>
 
     </section>
     <section id="projects">
-        <h2 class="hidden-left">SELECTION<br><span>DE PROJETS</span></h2>
+        <h2 class="reveal-left">SELECTION<br><span>DE PROJETS</span></h2>
         <div class="projects">
-            <div id="dashboard" class="hidden-left">
+            <div id="dashboard" class="reveal-left">
                 <a href="./html/dashboard.html"><div class="left-project"><img src="images/Dashboard/dashboard.png"></div></a>
                 <div class="right-project">
                     <h3><a href="./html/dashboard.html">Dashboard</a></h3>
@@ -144,7 +148,7 @@
 
                 </div> 
             </div>
-            <div id="bugtracker" class="hidden-right">
+            <div id="bugtracker" class="reveal-right">
                 <a href="./html/bugtracker.html"><div class="left-project"><img src="images/BugTracker/Mockup Bugtracker.png"></div></a>
                 <div class="right-project">
                     <h3><a href="./html/bugtracker.html">Bugtracker</a></h3>
@@ -154,7 +158,7 @@
 
                 </div> 
             </div>
-            <div id="meatofkings" class="hidden-left">
+            <div id="meatofkings" class="reveal-left">
                 <a href="./html/mok.html"><div class="left-project"><img src="images/MOKS/Mockup mok.png"></div></a>
                 <div class="right-project">
                     <h3><a href="./html/mok.html">Meat of Kings</a></h3>
@@ -164,7 +168,7 @@
 
                 </div> 
             </div>
-            <div id="spine" class="hidden-right">
+            <div id="spine" class="reveal-right">
                 <a href="./html/spine.html"><div class="left-project"><img src="images/SpineSkatepark/Mockup spine.png"></div></a>
                 <div class="right-project">
                     <h3><a href="./html/spine.html">Spine Skatepark</a></h3>
@@ -175,7 +179,7 @@
 
                 </div> 
             </div>
-            <div id="meatofkingsvisuel" class="hidden-left">
+            <div id="meatofkingsvisuel" class="reveal-left">
                 <a href="./html/mokiv.html"><div class="left-project"><img src="images/MOKIV/Mockup mokiv.png"></div></a>
                 <div class="right-project">
                     <h3><a href="./html/mokiv.html">Meat Of Kings</a></h3>
@@ -190,15 +194,15 @@
     <hr>
     <section id="contact">
         <div class="top">
-            <a href="mailto:loick.desbuleux@gmail.com">me contacter</a>
-            <div>
+            <a href="mailto:loick.desbuleux@gmail.com" class="reveal-left">me contacter</a>
+            <div class="reveal-right">
                 <a href="https://www.linkedin.com/in/loick-desbuleux/" target="_blank"><span>Linkedin<span class="material-symbols-outlined">
                     north_east</span></span></a>
                 <a href="https://github.com/LoickDes" target="_blank"><span>Github<span class="material-symbols-outlined">
                     north_east</span></span></a>
             </div>
         </div>
-        <a href="./assets/CV.pdf" download><span>Curriculum vitæ</span><span class="material-symbols-outlined">
+        <a href="./assets/CV.pdf" download="CV" class="hidden-top"><span>Curriculum vitæ</span><span class="material-symbols-outlined">
             download</span><img src="assets/Capturecv.png"/></a>
         
     
