@@ -34,7 +34,7 @@ h1{
 
 h2{
     margin-top: 0.5vh;
-    font-size: 5rem;
+    font-size: 5.5vw;
     text-transform: uppercase;
     font-weight: 500;
 
@@ -74,12 +74,13 @@ section{
     width: 4.5vw;
     text-transform: uppercase;
     font-size: 0.7rem;
-    margin-top: -10vh;
+    margin-top: -8vw;
+    flex-wrap: nowrap;
 }
 
 .right{
     display: flex;
-    margin-top: 280vh;
+    margin-top: 290vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -87,13 +88,13 @@ section{
 }
 
 .right img{
-    height: 350px;
+    height: 20vw;
    
 
 }
 
 .both{
-    margin-top: -270vh;
+    margin-top: -280vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -135,3 +136,54 @@ section>a{
         transform: scaleY(0);
     }
 }
+
+@media (max-width: 768px){
+
+    .right img{
+        height: 50vw;
+    }
+
+    .left>div span{
+     
+        height: 20px;
+        width: 45px;
+        font-size: 0.6rem;
+     
+    
+    }
+
+  
+
+    .both{
+        
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vh;
+        margin-top: 0;
+        
+    }
+
+    .right{
+        margin-top: 0;
+    }
+
+    .left{
+       
+        width: 80vw;
+        position: static;
+       
+    
+    }
+
+    .left>div{
+        display: flex;
+        gap: 0.7vw;
+        align-items: center;
+        width: 80vw;
+      
+    
+    }
+    h2{
+        font-size: 10vw;
+    }
+  }

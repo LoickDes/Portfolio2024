@@ -9,7 +9,7 @@ $(document).ready(function(){
   let y;
 
   $('#contact>a').mousemove(function(event){
-    x=event.pageX - $ ("#contact>a").offset().left;
+    x=event.pageX - $("#contact>a").offset().left;
     y=event.pageY - $("#contact>a").offset().top;
     $('#contact>a>span:first-child').css('margin-left','2vw');
  

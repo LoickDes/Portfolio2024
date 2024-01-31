@@ -103,8 +103,7 @@ h1>a{
 }
 
 #home aside>*{
-    animation: shaking 20s ease infinite;
-    transform: rotate(-5deg);
+    animation: shaking 10s linear infinite;
 }
 
 menu ul{
@@ -302,6 +301,8 @@ content: "";
    
 }
 
+
+
 #projects>h2{
     font-family: 'Playfair display', serif;
     font-style: italic;
@@ -424,7 +425,7 @@ content: "";
     width: auto;
     white-space: nowrap;
     position: relative;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 3.2rem;
     text-transform: uppercase;
     color: black;
@@ -781,16 +782,18 @@ nav a>.screenshots{
     }
   }
 
+
+
   .hidden-left{
     opacity: 0;
-    transform: translateX(-80%);
+    transform: translateX(-30%);
     transition: all ease 1s;
-    filter: blur(5px);
+   
   }
 
     .hidden-right{
         opacity: 0;
-        transform: translateX(80%);
+        transform: translateX(30%);
         transition: all ease 1s;
         filter: blur(5px);
     }
@@ -798,20 +801,20 @@ nav a>.screenshots{
     .hidden-bottom{
         opacity: 0;
         transform: translateY(100%);
-        transition: all ease 0.8s;
+        transition: all ease 1s;
         filter: blur(5px);
     }
 
     .hidden-top{
         opacity: 0;
-        transform: translateY(-100%);
-        transition: all ease 0.8s;
+        transform: translateY(-30%);
+        transition: all ease 1s;
     }
 
   .show{
     opacity: 1;
     filter: blur(0px);
-    transform: translateX(0);
+    transform: translate(0);
 
   }
 
@@ -958,8 +961,12 @@ nav a>.screenshots{
 
   @keyframes shaking {
 
-    0%{transform: rotate(5deg);}
-    50%{ transform: rotate(-5deg);}
-    100% { transform: rotate(5deg); }
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(5deg); }
+        50% { transform: rotate(0eg); }
+        75% { transform: rotate(-5deg); }
+        100% { transform: rotate(0deg); }
    
   }
+
+ 
