@@ -1007,4 +1007,166 @@ nav a>.screenshots{
    
   }
 
- 
+  @media (max-width: 768px){
+
+        
+
+    spline-viewer{
+        display: none;
+    }
+
+    aside{
+        background-image: url('../Screenshots/pc.png');
+      
+        background-size: contain;
+        background-repeat: no-repeat;
+        width:400px;
+     
+     
+        
+    }
+
+     #home>h2{
+
+        margin-top: 15vh;
+        font-size: 15vw;
+        line-height: 6vh;
+        white-space: wrap;
+       
+    
+    }
+
+    #home{
+
+        max-width: auto;
+        height: 100%;
+        gap: 15vh;
+        
+    
+    
+    }
+
+    #home a{
+        align-self: center;
+        margin-top: -25vh;
+
+    }
+    
+
+    .reveal-left-slider{
+        opacity: 1;
+        transform: translateX(0%);
+       
+       
+        }
+    
+        .reveal-right-slider{
+            opacity: 1;
+            transform: translateX(0%);
+           
+            
+        }
+    
+      .reveal-left{
+        opacity: 1;
+        transform: translateX(0%);
+       
+       
+      }
+    
+      .hidden-left{
+        opacity: 1;
+        transform: translateX(0%);
+        animation: right 1s 2s;
+        animation-iteration-count: 1;
+        
+       
+      }
+    
+      
+    
+        .reveal-right{
+            opacity: 1;
+            transform: translateX(0%);
+           
+           
+        }
+    
+        .hidden-bottom{
+            opacity: 1;
+            transform: translateY(0%);
+            
+      
+        }
+    
+        .hidden-top{
+            opacity: 1;
+            transform: translateY(0%);
+           
+        }
+    
+        .reveal-bottom{
+            opacity: 1;
+            transform: translateY(0%);
+            
+      
+        }
+    
+        .reveal-top{
+            opacity: 1;
+            transform: translateY(0%);
+           
+        }
+    
+      .active, .show{
+        opacity: 1;
+        transform: translate(0);
+       
+    
+      }
+    
+      #me{
+        margin-top: -5vh;
+      }
+
+
+    #me>h2{
+       
+        font-size: 15vw;
+        line-height: 6vh;
+    }
+
+    #me .container{
+        margin-top: 0vh;
+        flex-direction: column-reverse;
+       
+    }
+
+    .left{
+        width: 80%;
+      
+      
+    }
+
+    .left>p{
+        text-align: center;
+    }
+
+    #keywords{
+        justify-content: center;
+    }
+   
+    #keywords span{
+        border-radius: 20px;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4vh;
+        width: 25vw;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+   
+  
+  }
