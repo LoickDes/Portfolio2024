@@ -82,6 +82,12 @@ section{
 
 }
 
+body>span{
+    padding: 1%;
+    font-size: 14px;
+}
+
+
 .right{
     display: flex;
     margin-top: 280vh;

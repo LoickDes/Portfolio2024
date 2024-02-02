@@ -19,6 +19,11 @@ p{
     font-size: 15px;
 }
 
+body>span{
+    padding: 1%;
+    font-size: 14px;
+}
+
 p+a{
     display: flex;
     align-items: center;

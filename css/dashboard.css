@@ -168,3 +168,8 @@ section>a{
         font-size: 10vw;
     }
   }
+
+  body>span{
+    padding: 1%;
+    font-size: 14px;
+}

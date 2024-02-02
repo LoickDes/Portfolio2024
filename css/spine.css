@@ -99,6 +99,11 @@ section{
 
 }
 
+body>span{
+    padding: 1%;
+    font-size: 14px;
+}
+
 .left>div span{
     border-radius: 20px;
     border: 1px solid black;
