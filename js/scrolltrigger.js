@@ -14,7 +14,6 @@ const observer = new IntersectionObserver((entries)=>{
     });    
 });
 
-
 const hiddenbottomElements = document.querySelectorAll('.hidden-bottom');
 hiddenbottomElements.forEach((el)=>observer.observe(el));
 

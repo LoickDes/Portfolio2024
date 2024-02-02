@@ -1182,6 +1182,10 @@ nav a>.screenshots{
         font-size: 8vw;
     }
 
+    #contact>div>a::before{
+        display: none;
+    }
+
     #contact{
         gap: 0;
     }
@@ -1215,6 +1219,15 @@ nav a>.screenshots{
 
     .loader{
         width: 75%;
+    }
+
+    .links{
+        justify-content: center;
+        gap: 5vh;
+    }
+
+    nav>a .screenshots{
+        display: none;
     }
   
   }
