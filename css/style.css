@@ -611,6 +611,7 @@ hr{
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid black;
+    cursor: none;
 
 }
 
@@ -631,7 +632,6 @@ main>span{
     height: 200px;
     transform: translate(-50%,-50%);
     pointer-events: none;
-    transition: all 0.2s linear;
 
     
 
@@ -682,6 +682,7 @@ nav{
     width: 60vw;
     height: 20vh;
     border-bottom: 1px solid white;
+    cursor:none;
 }
 
 
@@ -717,7 +718,7 @@ nav a>.screenshots{
     scale: 0;
     transform:translate(-50%, -50%);
     transform-origin: left right;
-    transition: all 0.2s linear;
+
 
 
 }
