@@ -227,6 +227,7 @@ content: "";
 .left p{
     
     font-size: 1.5rem;
+    text-align: justify;
     color: white;
     opacity: 0.6;
 
@@ -265,7 +266,9 @@ content: "";
 
 .container img{
     height: 500px;
+    width: 350px;
     border-radius: 50px;
+    object-fit: cover;
 }
 
 .skills{
@@ -366,7 +369,7 @@ content: "";
     width: 100vw;
 }
 
-#dashboard,#bugtracker,#meatofkings,#spine{
+#dashboard,#bugtracker,#meatofkings,#pokemoncards, #guardianofaetheria{
     padding-bottom: 13vh;
 
 }
@@ -377,21 +380,29 @@ content: "";
     padding-left: 5vw;
 }
 
+#guardianofaetheria{
+    display: flex;
+    width: auto;
+    padding-left: 5vw;
+}
+
+
 
 .left-project{
     height: 550px;
     width: 825px;
-    background-color: #F6A833;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
+    background-color: #DDE6ED;
 }
+
 
 .left-project>img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 50px;
     transition: all ease 1s;
 }
@@ -442,10 +453,6 @@ content: "";
     font-size: 0.7rem;
 }
 
-#bugtracker .left-project{
-    background-color: #B83B5E;
-}
-
 #bugtracker{
     width: auto;
     display: flex;
@@ -454,6 +461,27 @@ content: "";
     justify-content: flex-start;
     padding-right:5vw;
 
+}
+
+#pokemoncards{
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right:5vw;
+
+}
+
+#pokemoncards .right-project>div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#pokemoncards .right-project{
+    width: auto;
+    margin-right: 2vw;
 }
 
 #bugtracker .right-project>div{
@@ -473,14 +501,6 @@ content: "";
     padding-left: 5vw;
 }
 
-#meatofkings .left-project{
-    background-color: #B4846C;
-}
-
-
-#spine .left-project{
-    background-color: #6A2C70;
-}
 
 #spine{
     width: auto;
@@ -508,10 +528,6 @@ content: "";
     display: flex;
     padding-left: 5vw;
 
-}
-
-#meatofkingsvisuel .left-project{
-    background-color: #F9ED69;
 }
 
 
@@ -1132,7 +1148,8 @@ nav a>.screenshots{
         transition: all ease 1s;
     }
 
-    #dashboard,#bugtracker,#meatofkings,#spine, #meatofkingsvisuel{
+    #dashboard,#bugtracker,#meatofkings,#pokemoncards, #guardianofaetheria{
+        padding-bottom: 13vh;
        flex-direction: column;
        align-items: center;
        justify-content: center;
@@ -1156,7 +1173,8 @@ nav a>.screenshots{
        justify-content: center;
     }
 
-    #spine .right-project > div{
+
+     #pokemoncards .right-project > div{
         justify-content: center;
      }
     
